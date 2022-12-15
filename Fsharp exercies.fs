@@ -1,3 +1,5 @@
+(* Problem 4 from functinal programming exam May 16 ) 
+
 type T<'a> = L | N of T<'a> * 'a * T<'a>
 let t = N(N(L, 1, N(N(L, 2, L), 1, L)), 3, L);;
 
